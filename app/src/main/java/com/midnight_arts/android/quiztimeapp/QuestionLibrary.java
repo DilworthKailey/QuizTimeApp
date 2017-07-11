@@ -2,7 +2,6 @@ package com.midnight_arts.android.quiztimeapp;
 
 /**
  * Created by Kailey on 7/1/2017.
- * GITHUB push Test
  */
 
 public class QuestionLibrary {
