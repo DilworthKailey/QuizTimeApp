@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         TextView textView2 = (TextView) findViewById(R.id.textView2);
-        textView2.setText("Here is the weather for the current set coordinates:");
+        textView2.setText("Here is the weather for the currently set coordinates:");
 
     }
 
@@ -53,6 +53,26 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    /*
+    * Attempt to let user set coordinates themselves
+    public void changeWeather(View view) {
+
+        EditText editText = (EditText) findViewById(R.id.editText2);
+        String lat = editText.getText().toString();
+
+        EditText editText2 = (EditText) findViewById(R.id.editText3);
+        String lng = editText2.getText().toString();
+
+        if (lat.length() != 0 && lng.length() != 0){
+            Weather getData = new Weather();
+            getData.execute("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lng + "&appid=d506bc3df492b5dc232a0c0a9748bf12");
+
+        } else {
+            toastMessage("Both latitude and longitude must be set to a valid number.");
+        }
+
+    }
+    */
     private void toastMessage(String message){
         Toast.makeText(this,message, Toast.LENGTH_SHORT).show();
     }

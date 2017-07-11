@@ -15,7 +15,7 @@ public class QuestionLibrary {
             "Which is a real protein?",
             "How many Queen Elizabeths of England have there been?",
             "What are the three primary colors?",
-            "What is the current temperature in Richfield, Utah?",
+            "What is the current temperature displayed on the Main Menu?",
             "Congratulations! You finished with a highscore! Restart Quiz, or Quit?"
 
     };
