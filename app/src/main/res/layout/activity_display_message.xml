@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.quiztimeapp.DisplayMessageActivity">
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_marginBottom="40dp"
+    >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="351dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textSize="18sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:id="@+id/score_text"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginRight="47dp"
+        android:layout_marginEnd="47dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/score"
+        android:layout_alignParentRight="true"
+        android:text="0"
+        android:textSize="20sp"
+        />
+
+
+</RelativeLayout>
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:text="Which shape has no sides?"
+    android:textSize="20sp"
+    android:padding="8dp"
+    android:layout_marginBottom="40dp"
+    android:id="@+id/question"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Square"
+    android:background="#0091EA"
+    android:textColor="#fff"
+    android:padding="8dp"
+    android:layout_marginBottom="24dp"
+    android:id="@+id/choice1"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Circle"
+    android:background="#0091EA"
+    android:textColor="#fff"
+    android:padding="8dp"
+    android:layout_marginBottom="24dp"
+    android:id="@+id/choice2"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Triangle"
+    android:background="#0091EA"
+    android:textColor="#fff"
+    android:padding="8dp"
+    android:layout_marginBottom="24dp"
+    android:id="@+id/choice3"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Quit"
+    android:onClick="quitApp"
+    android:background="#B71C1C"
+    android:textColor="#fff"
+    android:padding="8dp"
+    android:layout_marginBottom="24dp"
+    android:id="@+id/quit"/>
+
+</LinearLayout>
