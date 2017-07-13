@@ -1,6 +1,8 @@
 package com.midnight_arts.android.quiztimeapp;
 
+import android.content.Context;
 import android.content.Intent;
+import android.support.v4.util.Pair;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         TextView textView2 = (TextView) findViewById(R.id.textView2);
         textView2.setText("Here is the weather for the currently set coordinates:");
 
+        new ServletPostAsyncTask().execute(new Pair<Context, String>(this, "Kailey Dilworth"));
     }
 
     public void sendMessage(View view) {
