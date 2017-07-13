@@ -24,7 +24,7 @@ import javax.net.ssl.HttpsURLConnection;
  * Created by Kailey on 7/13/2017.
  */
 
-public class ServletPostAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
+class ServletPostAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
     private Context context;
 
     @Override

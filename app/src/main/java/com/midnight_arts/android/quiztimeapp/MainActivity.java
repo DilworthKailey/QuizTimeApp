@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         textView2.setText("Here is the weather for the currently set coordinates:");
 
         new ServletPostAsyncTask().execute(new Pair<Context, String>(this, "Kailey Dilworth"));
+
     }
 
     public void sendMessage(View view) {
